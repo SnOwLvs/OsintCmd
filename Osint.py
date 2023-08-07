@@ -101,10 +101,10 @@ def main():
     click.echo(Fore.RED + "Bienvenue dans l'interface OSINT !")
     
     while True:
-        click.echo(Fore.RED + "\nChoix disponibles :")  # Toujours en rouge
+        click.echo("\n" + Fore.RED + "Choix disponibles :")  # Toujours en rouge
         sorted_tools = sorted(TOOLS, key=lambda x: x['name'])
         for index, tool in enumerate(sorted_tools, start=1):
-            click.echo(Fore.RED + f"{index: <3}) {tool['name']}")
+            click.echo(Fore.CYAN + f"{index: <2}) {tool['name']}")
         click.echo(Fore.RED + f" 0) Quitter")
         
         choice = click.prompt(Fore.RED + "Choisissez un outil (1-13)", type=int, default=0, show_default=False)
