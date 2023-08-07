@@ -1,3 +1,7 @@
+Aller à Update 2 : OsintCmd-2
+Url : https://github.com/SnOwLvs/OsintCmd-2
+
+
 Répertoire des meilleurs Tools d'Osint dans le CMD. 
 
 
