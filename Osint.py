@@ -79,7 +79,7 @@ TOOLS = [
         'url': 'https://github.com/khast3x/h8mail'
     }
 ]
-
+# By SnowFish
 def print_header():
     header = Fore.CYAN + "By SnowFish\n" + Fore.RED + """
                 .-')                 .-') _  .-') _
@@ -101,11 +101,11 @@ def main():
     click.echo(Fore.RED + "Bienvenue dans l'interface OSINT !")
     
     while True:
-        click.echo("\n" + Fore.RED + "Choix disponibles :")  # Toujours en rouge
+        click.echo(Fore.RED + "\nChoix disponibles :")  # Toujours en rouge
         sorted_tools = sorted(TOOLS, key=lambda x: x['name'])
         for index, tool in enumerate(sorted_tools, start=1):
-            click.echo(Fore.CYAN + f"{index: <2}) {tool['name']}")
-        click.echo(Fore.RED + f" 0) Quitter")
+            click.echo(Fore.CYAN + f"{index: <3}) {tool['name']}")
+        click.echo(Fore.RED + " 0) Quitter")
         
         choice = click.prompt(Fore.RED + "Choisissez un outil (1-13)", type=int, default=0, show_default=False)
         
@@ -137,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# By SnowFish
